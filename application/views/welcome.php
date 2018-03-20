@@ -15,6 +15,12 @@
 	<meta http-equiv="refresh" content="<?php echo $this->config->item('refresh');?>">
 	<?php } ?>
 	</noscript>
+	
+	<style>
+	span.pull-right {
+		display: none;
+	}
+	</style>
 </head>
 <body>
 	<div class="navbar navbar-inverse navbar-fixed-top">
@@ -25,7 +31,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-		  <a class="brand" href="<?php echo site_url('');?>">Support Center</a>
+		  <a class="brand" href="<?php echo site_url('');?>">Supervisord Monitoring</a>
           <div class="nav-collapse collapse">
             <ul class="nav">
 			<li class="active"><a href="<?php echo site_url();?>">Home</a></li>
@@ -37,7 +43,6 @@
 			}
 		;?></a></li>
 		<li><a href="<?php echo site_url();?>">Refresh <b id="refresh">(<?php echo $this->config->item('refresh');?>)</b> &nbsp;</a></li>
-              <li><a href="mailto:martin@lazarov.bg">Contact</a></li>
             </ul>
           </div><!--/.nav-collapse -->
         </div>
@@ -172,7 +177,7 @@
     </div> <!-- /container -->
 	
 	<div class="footer">
-		<p>Powered by <a href="https://github.com/mlazarov/supervisord-monitor" target="_blank">Supervisord Monitor</a> | Page rendered in <strong>{elapsed_time}</strong> seconds</p>
+		<p>Powered by <a href="https://github.com/HOAExpress/supervisord-monitor" target="_blank">Supervisord Monitor</a> | Page rendered in <strong>{elapsed_time}</strong> seconds</p>
 	</div>
 	<script>
 	function show_content($param){
