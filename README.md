@@ -1,1 +1,1 @@
-_Forked to make changes for our company._
+Forked for internal company use
